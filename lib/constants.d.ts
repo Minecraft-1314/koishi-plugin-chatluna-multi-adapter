@@ -1,0 +1,13 @@
+export declare const PLUGIN_NAME = "chatluna-multi-adapter";
+export declare const DEFAULT_CONTEXT_SIZE = 128000;
+export declare const DEFAULT_MAX_CONTEXT_RATIO = 0.35;
+export declare const DEFAULT_TEMPERATURE = 1;
+export declare const DEFAULT_TIMEOUT: number;
+export declare const DEFAULT_CONCURRENT_MAX_SIZE = 3;
+export declare const DEFAULT_CHAT_TIME_LIMIT = 200;
+export declare const MODEL_ENDPOINT_SEPARATOR = "@";
+export declare const MODEL_LABEL_SEPARATOR = " > ";
+export declare const PRIMARY_ENDPOINT_INDEX = -1;
+export declare const FAILURE_COOLDOWN_MULTIPLIERS: number[];
+export declare const MAX_FAILURE_COOLDOWN: number;
+export declare const DEFAULT_ENDPOINT_FAILURE_COOLDOWN = 30000;

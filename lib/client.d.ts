@@ -1,0 +1,33 @@
+import { Logger } from 'koishi';
+import { PlatformModelEmbeddingsAndRerankerClient } from 'koishi-plugin-chatluna/llm-core/platform/client';
+import { ClientConfig } from 'koishi-plugin-chatluna/llm-core/platform/config';
+import { ChatLunaChatModel, ChatLunaEmbeddings } from 'koishi-plugin-chatluna/llm-core/platform/model';
+import { ChatLunaReranker } from 'koishi-plugin-chatluna/llm-core/platform/rerank';
+import type { ModelInfo } from 'koishi-plugin-chatluna/llm-core/platform/types';
+import type { RunnableConfig } from '@langchain/core/runnables';
+import type { ModelUsageReporter } from 'koishi-plugin-chatluna/llm-core/platform/usage';
+import { RotationRegistry } from './rotation';
+import { Config, EndpointBinding } from './types';
+export declare class MultiEndpointOpenAIClient extends PlatformModelEmbeddingsAndRerankerClient<ClientConfig> {
+    platform: string;
+    private readonly _config;
+    private readonly _requester;
+    private readonly _endpoints;
+    private readonly _registry;
+    private readonly _logger;
+    private readonly _debug;
+    constructor(ctx: any, config: Config, plugin: any, endpoints: EndpointBinding[], registry: RotationRegistry, logger: Logger, debug: boolean);
+    refreshModels(_config?: RunnableConfig): Promise<ModelInfo[]>;
+    private _buildModelLabels;
+    private _pairKey;
+    private _pulledEntry;
+    private _registerGroups;
+    private _enabledGroups;
+    protected _createModel(model: string, report: ModelUsageReporter): ChatLunaChatModel | ChatLunaReranker | ChatLunaEmbeddings;
+    private _pullAllEndpoints;
+    private _additionalModels;
+    private _buildModelList;
+    private _buildGroupModels;
+    private _describeCandidate;
+    private _logSummary;
+}

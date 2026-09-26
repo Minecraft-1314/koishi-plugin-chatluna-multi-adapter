@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0",
+    "lib": ["ES2021"],
+    "outDir": "lib",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "koishi-plugin-chatluna/llm-core/*": [
+        "../../node_modules/koishi-plugin-chatluna/lib/llm-core/*"
+      ],
+      "koishi-plugin-chatluna/services/*": [
+        "../../node_modules/koishi-plugin-chatluna/lib/services/*"
+      ],
+      "koishi-plugin-chatluna/utils/*": [
+        "../../node_modules/koishi-plugin-chatluna/lib/utils/*"
+      ]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "lib"]
+}
+
