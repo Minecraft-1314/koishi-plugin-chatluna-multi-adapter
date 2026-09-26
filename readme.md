@@ -218,8 +218,14 @@ This plugin is a fork of the upstream adapter and is not an official release. Pl
 
 ## 许可协议 (License)
 
-本项目采用 MIT 许可证。  
-This project is licensed under the MIT License.
+本项目采用 [GNU Affero General Public License v3.0](https://www.gnu.org/licenses/agpl-3.0.html) 许可证，与上游适配器保持一致。  
+This project is licensed under the GNU Affero General Public License v3.0, consistent with the upstream adapter.
+
+本插件 fork 自 [koishi-plugin-chatluna-openai-like-adapter](https://github.com/ChatLunaLab/chatluna/tree/v1-dev/packages/adapter-openai-like)，原作者 dingyi222666，版权归 ChatLunaLab 及原插件所有，本插件的版权声明一并沿用。  
+This plugin is a fork of koishi-plugin-chatluna-openai-like-adapter by dingyi222666. Copyright of the original work belongs to ChatLunaLab and is carried over to this fork.
+
+AGPL-3.0 属于强 copyleft：分发本插件或其衍生作品时，必须以相同许可发布，并保留完整源码与上述版权声明。  
+AGPL-3.0 is a strong copyleft licence: any distribution of this plugin or a derivative work must use the same licence and retain the full source code and the copyright notice above.
 
 ## 支持我们 (Support Us)
 

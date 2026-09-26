@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-chatluna-multi-adapter",
   "description": "Koishi ChatLuna 多接口 OpenAI 兼容适配器，并发聚合全部 API 接口的模型列表，支持模型轮换组与出错自动切换。Fork 自 koishi-plugin-chatluna-openai-like-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": ["lib"],
